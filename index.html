@@ -3,7 +3,9 @@
     <script type="text/javascript" src="jquery-3.3.1.js"></script>
 </head>
 <body>
+<div id="main">
 <div>
+    <br>
 <h1>Sophie hat Geburtstag</h1>
 <h3>Also ist Partytime</h3>
 <button id="button" onclick="myFunction()">Ich bin dabei Button</button>
@@ -13,15 +15,6 @@
 </audio>
     <p id="a"></p>
 </div>
-<script>
-function myFunction() {
-  document.getElementById("a").innerHTML = "Wuhuu";
-  document.getElementById("musik").pause();
-  document.getElementById("button").style.visibility = "hidden";
-  document.getElementById("hearts").style.visibility = "visible";
-
-}
-</script>
 <img src=gifs/xz.gif alt="dance girl">
 <img src=gifs/Minion.gif>
 <img src=gifs/WorkoutMum.gif>
@@ -29,4 +22,27 @@ function myFunction() {
 <img src=gifs/Katze.gif>
 <img src=gifs/Snoopdog.gif>
 <img id="hearts" src=gifs/hearts.gif>
+</div>
+<div id="vorseite">
+
+    <button id="button2" onclick="myFunction2()">Klick Mich</button>
+</div>
+<script>
+function myFunction() {
+
+  document.getElementById("a").innerHTML = "Wuhuu";
+  document.getElementById("musik").pause();
+  document.getElementById("button").style.visibility = "hidden";
+  document.getElementById("hearts").style.visibility = "visible";
+
+}
+function myFunction2() {
+
+  document.getElementById("musik").play();
+  document.getElementById("vorseite").style.visibility = "hidden";
+  document.getElementById("main").style.visibility = "visible";
+
+}
+</script>
+
 </body>
