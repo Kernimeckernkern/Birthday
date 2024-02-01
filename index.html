@@ -1,14 +1,24 @@
-<head></head>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+</head>
 <body>
+<div>
 <h1>Sophie hat Geburtstag</h1>
-<p>Also ist Partytime</p>
-<button onclick="myFunction()">Ich bin dabei Button</button>
-
-<p id="a"></p>
-
+<h3>Also ist Partytime</h3>
+<button id="button" onclick="myFunction()">Ich bin dabei Button</button>
+<audio id="musik" loop autoplay>
+	<source src="2002-anne_marie.mp3" type="audio/mpeg">
+	Ihr Browser unterstützt keine dieser Audioformate
+</audio>
+    <p id="a"></p>
+</div>
 <script>
 function myFunction() {
   document.getElementById("a").innerHTML = "Wuhuu";
+  document.getElementById("button").style.visibility = "hidden";
+  document.getElementById("hearts").style.visibility = "visible";
+
 }
 </script>
 <img src=gifs/xz.gif alt="dance girl">
@@ -17,4 +27,5 @@ function myFunction() {
 <img src=gifs/Toad.gif>
 <img src=gifs/Katze.gif>
 <img src=gifs/Snoopdog.gif>
+<img id="hearts" src=gifs/hearts.gif>
 </body>
