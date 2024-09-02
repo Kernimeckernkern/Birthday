@@ -10,7 +10,11 @@
 <h3>Also ist Partytime</h3>
 <button id="button" onclick="myFunction()">Ich bin dabei Button</button>
 <audio id="musik" loop autoplay>
-	<source src="2002-anne_marie.mp3" type="audio/mpeg">
+	<source src="euphoric-electric.mp3" type="audio/mpeg">
+	Ihr Browser unterstützt keine dieser Audioformate
+</audio>
+<audio id="musik-wuhuu">
+	<source src="wuhuu.mp3" type="audio/mpeg">
 	Ihr Browser unterstützt keine dieser Audioformate
 </audio>
     <p id="a"></p>
@@ -31,7 +35,8 @@
 function myFunction() {
 
   document.getElementById("a").innerHTML = "Wuhuu";
-  document.getElementById("musik").pause();
+  // document.getElementById("musik").pause();
+  document.getElementById("musik-wuhuu").play();	
   document.getElementById("button").style.visibility = "hidden";
   document.getElementById("hearts").style.visibility = "visible";
 
