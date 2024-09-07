@@ -5,17 +5,30 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css">
     <title>Halloween / Fynn B-day</title>
+    <link rel="icon" href="pics/icon.jpeg" type="image/icon type">
 </head>
 <body>
-    <div>
-    <h1>Buuuuuh Fynn hat Gebuuuuuhrtstag  buuuhh</h1>
+    <div class="bg" id="intro">
+    <h1>Fynn hat Geburtstag</h1>
 
-    <p id="hi">Eine gruselige Party steht an</p>
-    <p id="hi2">test</p>
+    <p>Gebe das Passwort ein, um fortzufahren</p>
     <input type="password" id="pw" name="password" placeholder="Passwörtchen" required />
-    <input type="submit" value="Let's go'" />
+    <input type="submit" id="submit" value="Let's go'" />
     <br />
-    <span id="current">werttt</span>
+    <p id="ans"></p>
+    </div>
+
+    <div class="bg2" id="main">
+        <h1>Buuuuuh Fynn hat Gebuuuuuhrtstag  buuuhh</h1>
+        <img src="gifs/fynn.gif">
+        <p id="hi2">Eine gruselige Party steht an</p>
+        <p>Wir laden dich recht herzlich zur Halloween/Geburtstags Party ein</p>
+        <p id="hi"></p>
+
+        <audio id="musik" loop autoplay>
+            <source src="sounds/halloween_bg.mp3" type="audio/mpeg">
+            Ihr Browser unterstützt keine dieser Audioformate
+        </audio>
     </div>
 
     <script src="script.js"></script>
