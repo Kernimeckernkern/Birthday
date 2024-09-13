@@ -33,6 +33,7 @@ input{
     background-image: url("pics/bg2.avif");
     background-repeat: no-repeat;
     background-position: top;
+    background-color: rgb(242,242,242);
 
     /*background: linear-gradient(45deg, black, indigo, red,  rgb(252, 250, 252));*/
     position: fixed;
