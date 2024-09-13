@@ -1,6 +1,7 @@
 const pw = document.getElementById("pw");
 const current = document.getElementById("current");
 const submit = document.getElementById("submit");
+const ghost = document.getElementById("ghost");
 
 //document.getElementById("intro").style.visibility = "hidden";
   //      document.getElementById("main").style.visibility = "visible";
@@ -13,7 +14,12 @@ pw.onkeyup = function (e) {
 };
 
 submit.onclick =  login;
-
+ghost.onclick = function(){
+    document.getElementById("buhja").play();
+}
+document.getElementById("hexe").onclick = function(){
+    document.getElementById("musik_hexe").play();
+}
 async function login() {
     let p = await hash(pw.value);
     if(p == "65fa4ada77dfbe7a3a4e3ed31d5ecc85f9605f69a97f2a08ea319cf6b545793a"){
