@@ -2,7 +2,8 @@ const pw = document.getElementById("pw");
 const current = document.getElementById("current");
 const submit = document.getElementById("submit");
 
-
+//document.getElementById("intro").style.visibility = "hidden";
+  //      document.getElementById("main").style.visibility = "visible";
 pw.onkeyup = function (e) {
     if (e.key === 'Enter' || e.keyCode === 13) {
     login();

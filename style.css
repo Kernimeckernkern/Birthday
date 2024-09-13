@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'crowFont';
+    src: url('october_crow.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 body{
     text-align: center;
+    font:inherit;
+    font-family: crowFont;
 
 }
 div {
@@ -7,8 +13,12 @@ div {
   text-align: center;
 }
 img{
-    width:200;
-    height:400;
+    width:20;
+    height:40;
+}
+input{
+    font:inherit;
+    font-family: crowFont;
 }
 #hearts{
     visibility: hidden;
@@ -20,7 +30,7 @@ img{
     z-index: 10;
 }
 .bg{
-    background-image: url("pics/bg.avif");
+    background-image: url("pics/bg2.avif");
     background-repeat: no-repeat;
     background-position: top;
     -webkit-background-size: cover;
@@ -31,6 +41,9 @@ img{
     position: fixed;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bg2{
     background: linear-gradient(45deg, black, indigo, red,  rgb(252, 250, 252));
@@ -39,9 +52,7 @@ img{
     height: 100%;
 }
 #intro{
-    padding-top: 15%;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
 }
 #main{
     visibility: hidden;
@@ -57,4 +68,8 @@ img{
     background-color:cyan;
     color:blue;
 
+}
+#blood{
+    position:fixed;
+    top: 15%;
 }
