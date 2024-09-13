@@ -6,8 +6,11 @@ body{
     text-align: center;
     font:inherit;
     font-family: crowFont;
-
+    font-size: 1.5em;
 }
+h1 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+  }
 div {
 
   text-align: center;
@@ -29,8 +32,8 @@ input{
     top: 0;
     z-index: 10;
 }
-.bg{
-    background-image: url("pics/bg2.avif");
+#bg{
+    background-image: url("pics/bg.png");
     background-repeat: no-repeat;
     background-position: top;
     background-color: rgb(242,242,242);
@@ -39,6 +42,7 @@ input{
     position: fixed;
     width: 100%;
     height: 100%;
+    top: 13%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,12 +50,13 @@ input{
 .bg2{
     visibility: hidden;
     background: linear-gradient(180deg, black, red,  rgb(236, 196, 196));
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 #intro{
     position: fixed;
@@ -59,13 +64,13 @@ input{
 }
 
 #blood{
-    position: fixed;
-    top: 5%;
+    position: absolute;
+    top: 0%;
 }
 #fynn{
     display: flex;
 }
 #header{
     position:relative;
-    padding: 60px 20px;
+    padding: 0px 20px;
 }

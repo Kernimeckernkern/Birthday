@@ -9,7 +9,7 @@ pw.onkeyup = function (e) {
     if (e.key === 'Enter' || e.keyCode === 13) {
     login();
 }else{
-    document.getElementById("hi").innerHTML = "ahha";
+    document.getElementById("ghost").innerHTML = "buh";
 }
 };
 
@@ -22,11 +22,11 @@ document.getElementById("hexe").onclick = function(){
 }
 async function login() {
     let p = await hash(pw.value);
-    if(p == "65fa4ada77dfbe7a3a4e3ed31d5ecc85f9605f69a97f2a08ea319cf6b545793a"){
+    if(p == "b95b6b40298036e16f7b5ab183c6446649cf0377926ff8ce618691f52eb0f4eb"){
         document.getElementById("hi").innerHTML = "woop woop";
-        const link = "https://chat.whatsapp.com/" + pw.value.slice(-3);
+        const link = "https://chat.whatsapp.com/HlzV31UCe2M5SG0tf2c" + pw.value.slice(-3);
         document.getElementById("hi").innerHTML = "<a href="+link+">"+link+"<a>";
-        document.getElementById("intro").style.visibility = "hidden";
+        document.getElementById("bg").style.visibility = "hidden";
         document.getElementById("main").style.visibility = "visible";
         
         document.getElementById("musik").play();
